@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 221, 223);
+}
+
+.container {
+    width: 500px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: hsl(0, 0%, 100%); */
+    background-color: rgba(246, 244, 244, 0.884);
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.score-card {
+    background-color: rgb(76, 76, 192);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 12px;
+    border-radius: 24px;
+
+
+}
+
+
+.summary {
+    /* background-color: azure; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    padding-left: 2rem;
+    /* border-radius: 0 24px 24px 0; */
+    padding: 24px;
+
+}
+
+.score-card h3 {
+    color: hsl(0, 7%, 70%);
+}
+
+.score {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(0, 85, 255);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.score span {
+    font-size: 44px;
+    color: white;
+    font-weight: 700;
+}
+
+.score p {
+    color: hsl(0, 7%, 70%);
+    font-size: 14px;
+}
+
+.remark h3 {
+    margin-bottom: 1rem;
+    color: rgb(238, 226, 226);
+    font-size: 24px;
+}
+
+.remark p {
+    font-size: 18px;
+    padding: 0 0.5rem;
+    color: hsl(0, 12%, 75%);
+}
+
+.summary h4 {
+    color: hsl(225, 33%, 30%);
+    font-size: 18px;
+    padding-top: 0.8rem;
+}
+
+.sub-mark {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#bttn {
+    width: 100%;
+    border-style: none;
+    padding: 6px 12px;
+    border-radius: 24px;
+    color: aliceblue;
+    background-color: hsl(225, 33%, 30%);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#bttn :hover {
+    background-color: aqua;
+
+}
+
+.secured-mrk span {
+    color: hsl(225, 33%, 30%);
+
+}
+
+.secured-mrk {
+    color: hsl(0, 7%, 70%);
+}
+
+
+
+
+@media (max-width : 450px) {
+    .container {
+        height: 500px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.rec {
+    color: rgb(244, 125, 125);
+    font-size: 16px;
+}
+
+.Memory {
+    color: rgb(237, 185, 121);
+    font-size: 16px;
+
+}
+
+.verbal {
+    color: rgb(31, 225, 31);
+    font-size: 16px;
+
+}
+
+.visual {
+    color: rgb(98, 98, 228);
+    font-size: 16px;
+
+}
